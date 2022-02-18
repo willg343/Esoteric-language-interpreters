@@ -1,6 +1,6 @@
 import re
 
-def boolf(code, inp=""):
+def interpreter(code, inp=""):
     
     inp_stack = [*''.join(bin(ord(c))[2:].rjust(8,'0') for c in inp[::-1])]
     code = ''.join(s for s in code if s in '+,;[]<>')
